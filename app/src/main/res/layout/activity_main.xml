@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.itayrin.assignment_5.MainActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/startService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Service"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/inputName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Student Name"
+            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/inputAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Age"
+                    android:layout_weight="2"
+                    android:inputType="numberSigned"
+                    />
+                <EditText
+                    android:id="@+id/inputGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Grade"
+                    android:layout_weight="2"
+                    android:inputType="numberSigned"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Add"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/studentList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

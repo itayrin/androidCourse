@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/studentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student name"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="#00FFFF"
+        android:padding="10px"
+
+    />
+    <EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_editText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Please enter the new grade"
+    android:textColorHint="#ffFFFF"
+    android:inputType="numberSigned"
+    />
+</LinearLayout>
+
+
